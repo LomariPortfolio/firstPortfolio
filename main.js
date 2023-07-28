@@ -8,3 +8,4 @@ function haxxorEffect() {
     setTimeout(haxxorEffect, speed);
   }
 }
+//this is a really simple but cool animation
