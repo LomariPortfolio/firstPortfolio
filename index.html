@@ -1,80 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamza Lomari's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-</head>
-<body>
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="javascript:haxxorEffect()">
     <div id="container">
-        <div class="navbar">
-            <img src="https://images.crunchbase.com/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/q5genwzt9ru47slmnuzk" alt="" class="pfp">
-                <div class="btns">
-                    <button class="btn1" onclick="document.getElementById('textStuff').scrollIntoView();">Home</button>
-                    <button class="btn2" onclick="document.getElementById('grid').scrollIntoView();">Projects</button>
-                    <button class="btn3">About me</button>
-                    <button class="btn4">Contact me</button>
-                </div>
+      <div class="navbar">
+        <img
+          src="https://images.crunchbase.com/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/q5genwzt9ru47slmnuzk"
+          alt=""
+          class="pfp"
+        />
+        <div class="btns">
+          <button
+            class="btn1"
+            onclick="document.getElementById('textStuff').scrollIntoView();"
+          >
+            Home
+          </button>
+          <button
+            class="btn2"
+            onclick="document.getElementById('grid').scrollIntoView();"
+          >
+            Projects
+          </button>
+          <button
+            class="btn3"
+            onclick="document.getElementById('textStufff').scrollIntoView();"
+          >
+            About me
+          </button>
+          <button class="btn4">Contact me</button>
         </div>
-        
+      </div>
 
-
-        <section class="textStuff" id="textStuff">
-            <div class="texts">
-                <h1 class="welcome">
-                    Welcome! This is my <span class="port">projects portfolio.</span>
-                </h1>
-                <p class="para">
-                    This is where you will find all of my projects!
-                    Check them out by pressing<br><span class="portt">the arrow button!</span>
-                </p>
-            </div>
-        </section>
-
-
-
-        <a href="#grid" id="arrow"></a>
-        <div class="grid" id="grid">
-            <div class="site1">
-                <h1 class="projectTitle">CounterJS</h1>
-                <div class="linksContainer">
-                    <a target="_blank" href="https://lomariportfolio.github.io/SimpleCounterJs/" id="gitIoLinks"></a>
-                    <a target="_blank" href="https://github.com/LomariPortfolio/SimpleCounterJs" id="githubLinks"></a>
-                </div>
-                <p class="parag">A simple counting webapp I've made for learning Javascript and HTML.</p>
-            </div>
-            <div class="site2">
-                <h1 class="projectTitle">SimpleCalculatorJS</h1>
-                <div class="linksContainer">
-                    <a target="_blank" href="https://lomariportfolio.github.io/SimpleCalculatorJs/" id="gitIoLinks"></a>
-                    <a target="_blank" href="https://github.com/LomariPortfolio/SimpleCalculatorJS" id="githubLinks"></a>
-                </div>
-                <p class="parag">A simple calculator website I've made for learning Javascript and HTML.</p>
-            </div>
-            <div class="site3">
-                <h1 class="projectTitle">Google Mockup</h1>
-                <div class="linksContainer">
-                    <a target="_blank" href="https://lomariportfolio.github.io/googleMockup/" id="gitIoLinks"></a>
-                    <a target="_blank" href="https://github.com/LomariPortfolio/googleMockup" id="githubLinks"></a>
-                </div>
-                <p class="parag">An HTML/CSS mockup of the Google Search Engine homepage.</p>
-            </div>
-            <div class="site4">
-                <h1 class="projectTitle">Togglable Sidebar</h1>
-                <div class="linksContainer">
-                    <a target="_blank" href="https://lomariportfolio.github.io/coolSideBar/" id="gitIoLinks"></a>
-                    <a target="_blank" href="https://github.com/LomariPortfolio/coolSideBar" id="githubLinks"></a>
-                </div>
-                <p class="parag">A togglable Sidebar I've made to learn to making UI stuff in HTML/CSS, no frameworks for that juicy 300 lines.</p>
-            </div>
+      <section class="textStuff" id="textStuff">
+        <div class="texts">
+          <h1 class="welcome">
+            Welcome! This is my <span class="port">projects portfolio.</span>
+          </h1>
+          <p class="para">
+            This is where you will find all of my projects! Check them out by
+            pressing<br /><span class="portt">the arrow button!</span>
+            <br /><br /><br /><span id="haxxorAnim"></span>
+          </p>
         </div>
+      </section>
+
+      <a href="#grid" id="arrow"></a>
+
+      <div class="grid" id="grid">
+        <div class="site1">
+          <h1 class="projectTitle">CounterJS</h1>
+          <div class="linksContainer">
+            <a
+              target="_blank"
+              href="https://lomariportfolio.github.io/SimpleCounterJs/"
+              id="gitIoLinks"
+            ></a>
+            <a
+              target="_blank"
+              href="https://github.com/LomariPortfolio/SimpleCounterJs"
+              id="githubLinks"
+            ></a>
+          </div>
+          <p class="parag">
+            A simple counting webapp I've made for learning Javascript and HTML.
+          </p>
+        </div>
+        <div class="site2">
+          <h1 class="projectTitle">SimpleCalculatorJS</h1>
+          <div class="linksContainer">
+            <a
+              target="_blank"
+              href="https://lomariportfolio.github.io/SimpleCalculatorJs/"
+              id="gitIoLinks"
+            ></a>
+            <a
+              target="_blank"
+              href="https://github.com/LomariPortfolio/SimpleCalculatorJS"
+              id="githubLinks"
+            ></a>
+          </div>
+          <p class="parag">
+            A simple calculator website I've made for learning Javascript and
+            HTML.
+          </p>
+        </div>
+        <div class="site3">
+          <h1 class="projectTitle">Google Mockup</h1>
+          <div class="linksContainer">
+            <a
+              target="_blank"
+              href="https://lomariportfolio.github.io/googleMockup/"
+              id="gitIoLinks"
+            ></a>
+            <a
+              target="_blank"
+              href="https://github.com/LomariPortfolio/googleMockup"
+              id="githubLinks"
+            ></a>
+          </div>
+          <p class="parag">
+            An HTML/CSS mockup of the Google Search Engine homepage.
+          </p>
+        </div>
+        <div class="site4">
+          <h1 class="projectTitle">Togglable Sidebar</h1>
+          <div class="linksContainer">
+            <a
+              target="_blank"
+              href="https://lomariportfolio.github.io/coolSideBar/"
+              id="gitIoLinks"
+            ></a>
+            <a
+              target="_blank"
+              href="https://github.com/LomariPortfolio/coolSideBar"
+              id="githubLinks"
+            ></a>
+          </div>
+          <p class="parag">
+            A togglable Sidebar I've made to learn to making UI stuff in
+            HTML/CSS, no frameworks for that juicy 300 lines.
+          </p>
+        </div>
+      </div>
+      <section class="textStuff" id="textStufff">
+        <div class="texts">
+          <h1 class="welcome">So... <span class="port">Who am I?</span></h1>
+          <p class="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa neque
+            fugiat deserunt laudantium est voluptatibus, libero incidunt
+            mollitia hic commodi. At, error facere excepturi nulla ipsum
+            dignissimos itaque consequuntur nobis.
+          </p>
+        </div>
+      </section>
     </div>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

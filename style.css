@@ -17,14 +17,14 @@ body {
 body {
   background: var(--background);
   height: 100vh;
-  width: 200vw;
+  width: 400vw;
   font-family: "Roboto", sans-serif;
 }
 
 #container {
   display: flex;
   flex-flow: wrap column;
-  width: 200vw;
+  width: 400vw;
   height: 100vh;
 }
 
@@ -35,6 +35,7 @@ body {
   grid-auto-rows: 440px;
   position: relative;
   width: 100vw;
+  height:fit-content;
   top: 10%;
   justify-content: center;
 }
@@ -221,4 +222,12 @@ body {
   padding: 0;
   margin: 0;
   justify-content: center;
+}
+
+.progressBar{
+    width:20%;
+    height:10px;
+    background-color: black;
+    position: absolute;
+    border-radius: 1000px;
 }
